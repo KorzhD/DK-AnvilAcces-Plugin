@@ -1,0 +1,3 @@
+name: DK-AnvilAccess-Plugin
+version: '${project.version}'
+main: org.example.dmytrok.dkanvilaccessplugin.DK_AnvilAccess_Plugin
