@@ -12,10 +12,11 @@ public class AnvilOpenEvent implements Listener {
 
         Inventory inventory = event.getInventory();
         if (inventory.getType().equals(InventoryType.ANVIL)) {
-            event.setCancelled(true);
-            event.getPlayer().sendMessage("§c You can not open Anvil at this server ;(");
+            if (!(event.getPlayer().hasPermission("op"))) {
+                event.setCancelled(true);
+                event.getPlayer().sendMessage("§c You can not open Anvil at this server ;(");
+            }
         }
-
 
     }
 }
