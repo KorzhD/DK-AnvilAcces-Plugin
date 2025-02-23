@@ -8,7 +8,7 @@ public final class DK_AnvilAccess_Plugin extends JavaPlugin {
     public void onEnable() {
         getLogger().info("AnvilAccess plugin enabled");
 
-        getServer().getPluginManager().registerEvents(new ItemRenameEvent(), this);
+        getServer().getPluginManager().registerEvents(new AnvilOpenEvent(), this);
 
     }
 
