@@ -6,7 +6,7 @@ public final class DK_AnvilAccess_Plugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("AnvilAccess plugin enabled");
+        getLogger().info("\u001B[32m!---------------AnvilAcces Plugin enabled---------------!\u001B[0m");
 
         getServer().getPluginManager().registerEvents(new AnvilOpenEvent(), this);
 
@@ -14,6 +14,6 @@ public final class DK_AnvilAccess_Plugin extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        getLogger().info("AnvilAccess plugin disabled");
+        getLogger().info("\u001B[32m!---------------AnvilAcces Plugin disabled---------------!\u001B[0m");
     }
 }
